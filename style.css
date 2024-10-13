@@ -1,0 +1,85 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    padding: 70px 0;
+    font-size: 80px;
+    margin: 0;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Adjust h1 size for mobile */
+    }
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin: 0 auto; /* Center image */
+}
+
+/* Flexbox container for buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.register-btn, .login-btn {
+    background-color: #28a745; /* Green color for register */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: #007bff; /* Blue color for login */
+}
+
+.register-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.login-btn:hover {
+    background-color: #0069d9; /* Darker blue on hover */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .btn-container {
+        flex-direction: row; /* Keep buttons in a row for mobile as well */
+    }
+}
+
+
+    /* Container to hold the images in a row */
+.image-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Vertically align images */
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .image-container img {
+        width: 150px; /* Smaller width for mobile */
+    }
+}
